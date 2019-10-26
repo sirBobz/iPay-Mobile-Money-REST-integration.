@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use SmoDav\iPay\Cashier;
+use App\Libraries\Cashier;
 use Exception;
 
 class InitiatePaymentController extends Controller

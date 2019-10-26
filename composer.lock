@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0183646e448626d2c730420ed38502ef",
+    "content-hash": "f0b05b817b503788710b42051d7c4a31",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -2529,56 +2529,6 @@
             ],
             "description": "A polyfill for getallheaders.",
             "time": "2019-03-08T08:55:37+00:00"
-        },
-        {
-            "name": "smodav/ipay",
-            "version": "v1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SmoDav/ipay.git",
-                "reference": "000a8f151ff83b7a2d757531fe28e050b4bc48c0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SmoDav/ipay/zipball/000a8f151ff83b7a2d757531fe28e050b4bc48c0",
-                "reference": "000a8f151ff83b7a2d757531fe28e050b4bc48c0",
-                "shasum": ""
-            },
-            "require": {
-                "guzzlehttp/guzzle": "^6.2",
-                "php": ">=5.6"
-            },
-            "require-dev": {
-                "mockery/mockery": "dev-master",
-                "phpunit/phpunit": "4.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SmoDav\\iPay\\": "src/iPay/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "SmoDav",
-                    "email": "smodavprivate@gmail.com"
-                }
-            ],
-            "description": "iPay Africa PHP package for transaction handling",
-            "keywords": [
-                "airtel money",
-                "api",
-                "credit card",
-                "ipay",
-                "laravel",
-                "mpesa",
-                "transactions"
-            ],
-            "time": "2017-06-23T09:59:55+00:00"
         },
         {
             "name": "symfony/console",
