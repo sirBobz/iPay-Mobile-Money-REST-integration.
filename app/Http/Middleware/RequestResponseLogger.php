@@ -1,11 +1,13 @@
 <?php
-
+ 
 namespace App\Http\Middleware;
-
+ 
 use Closure;
-
+use Log;
+ 
 class RequestResponseLogger
 {
+
     /**
      * Handle an incoming request.
      *
@@ -15,12 +17,24 @@ class RequestResponseLogger
      */
     public function handle($request, Closure $next)
     {
-        // Pre-Middleware Action
 
-        $response = $next($request);
+        return $next($request);
+    }
+ 
+    public function terminate($request, $response)
+    {
 
-        // Post-Middleware Action
-
-        return $response;
+        //Log All Requests and Responses codes ==> log appropriately on live
+        Log::info('requests', [
+            'request' => $request->all(),
+            'user-Agent' => $request->header('User-Agent'),
+            'Host' => $request->header('Host'),
+            'Content-Type' => $request->header('Content-Type'),
+            'IP address' => $request->getClientIp(),
+            'method' => $request->getMethod(),
+            'URL' => $request->fullUrl(),
+            'response Code' => $response->getStatusCode(),
+        ]);    
+    
     }
 }
