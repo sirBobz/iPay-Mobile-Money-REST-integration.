@@ -77,6 +77,7 @@ $app->middleware([
 */
 
 $app->register(Flipbox\LumenGenerator\LumenGeneratorServiceProvider::class);
+$app->register(Urameshibr\Providers\FormRequestServiceProvider::class);
 
 /*
 |--------------------------------------------------------------------------
