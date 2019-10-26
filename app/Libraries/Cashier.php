@@ -8,7 +8,7 @@ use GuzzleHttp\Client;
  * Class Cashier.
  *
  * @category PHP
- * @author   David Mjomba <smodavprivate@gmail.com>
+ * @author   Bob Mwenda  <bobmwenda@gmail.com>
  */
 class Cashier
 {
