@@ -18,11 +18,11 @@ class InitiatePaymentController extends Controller
         //
     }
 
-    public function index(){
+    public function index(Request $request){
     	try 
     	{
 		   $cashier = new Cashier();
-		   return $response = $cashier
+		   echo $response = $cashier
 			    ->usingVendorId('ecml', 'edgecityk58d8e8dd')
 			    ->withCallback('http://yourcallback.com')
 			    ->withCustomer('0721553678', 'demo@example.com', false)
